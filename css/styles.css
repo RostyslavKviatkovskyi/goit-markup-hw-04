@@ -102,6 +102,11 @@ body {
   border-radius: 4px;
 }
 
+.modal-btn:focus,
+.modal-btn:hover {
+  background-color: #188ce8;
+}
+
 .filters-btn {
   padding: 6px 22px;
   min-width: 73px;
@@ -231,6 +236,13 @@ body {
   background-color: var(--background-hero-footer);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -249,6 +261,22 @@ body {
 /* END HERO */
 
 /* ADVANTAGES */
+
+.advantages-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-team);
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.advantages-icon-item {
+  width: 70px;
+  height: 70px;
+}
 
 .advantages-title {
   margin-bottom: 10px;
@@ -325,6 +353,43 @@ body {
 
 /* TEAM */
 
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+}
+
+.social-list-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--background-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
 .team-list-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -382,6 +447,50 @@ body {
 }
 
 /* TEAM END */
+
+/* CLIENTS */
+
+.clients-list {
+  margin-left: -30px;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-list-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.clients {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+
+.clients .occupation-title {
+  margin-bottom: 50px;
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  cursor: pointer;
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+/* CLIENTS END */
 
 /* LOGO */
 
