@@ -363,7 +363,7 @@ body {
   background-color: var(--background-color);
 }
 
-.social-list-link:not(:last-child) {
+.social-list-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -393,6 +393,8 @@ body {
 .team-list-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -519,6 +521,12 @@ body {
 
 /* FOOTER */
 
+.footer-title {
+  color: var(--background-color);
+  font-size: 14px;
+  line-height: 1.14;
+}
+
 .address {
   margin-top: 20px;
 }
@@ -527,6 +535,31 @@ body {
   background-color: var(--background-hero-footer);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.social-footer .social-list {
+  margin-top: 20px;
+}
+
+.social-footer .social-list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-footer .social-list-icon {
+  fill: var(--background-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-footer {
+  margin-left: 70px;
 }
 
 .footer-direct-address {
