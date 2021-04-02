@@ -233,6 +233,7 @@ body {
 }
 
 .hero {
+  max-width: 1600px;
   background-color: var(--background-hero-footer);
   padding-top: 200px;
   padding-bottom: 200px;
