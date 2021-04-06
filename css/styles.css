@@ -487,6 +487,7 @@ body {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  fill: #afb1b8;
 }
 
 .clients-list-link:hover,
@@ -494,6 +495,11 @@ body {
   cursor: pointer;
   border-color: var(--accent-color);
   fill: var(--accent-color);
+}
+
+.clients-list-link:focus .client-list-icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* CLIENTS END */
