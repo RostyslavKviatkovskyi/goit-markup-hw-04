@@ -531,11 +531,6 @@ body {
 
 /* FOOTER */
 
-.adress,
-.social-footer {
-  align-items: baseline;
-}
-
 .footer-title {
   color: var(--background-color);
   font-size: 14px;
@@ -555,6 +550,11 @@ body {
 
 .footer .container {
   display: flex;
+}
+
+.adress,
+.social-footer {
+  align-items: baseline;
 }
 
 .social-footer .social-list {
